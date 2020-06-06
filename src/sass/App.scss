@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+body {
+	background-image: url("/images/background.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 500px;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 76px;
+	font-size: calc(10px + 2vmin);
+	background-color: white;
+	color: white;
+}
+.logo {
+	margin-left: 30px;
+	margin-right: 200px;
+}
+.navbar {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	flex: 5;
+	height: 76px;
+}
+.navitems {
+	margin: 10px;
+	font-family: "Kaushan Script", cursive;
+}
+.navitems > a {
+	text-decoration: none;
+	color: #ef7998;
+	font-size: 1.5rem;
+}
+.navitems > a:hover {
+	color: black;
+}
+.nav2group {
+	display: flex;
+	flex: 5;
+	align-items: center;
+	justify-content: space-around;
+	color: black;
+	font-family: "Kaushan Script", cursive;
+}
+.navphone {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	svg {
+		padding: 0 0.6rem;
+	}
+}
+.shoppingchart {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	border: 0.1rem solid black;
+	color: black;
+	border-radius: 0.25rem;
+	padding: 0.4rem 0.6rem;
+
+	cursor: pointer;
+	p {
+		margin: 0;
+	}
+	svg {
+		padding: 0 0.6rem 0 0;
+	}
+}
+.background {
+	min-height: calc(100vh - 76px);
+	// height: 300px;
+	// background-image: url(/public/images/background.jpeg);
+	background: url(/public/images/background.jpeg) top/cover fixed no-repeat,
+		linear-gradient(rgba(249, 228, 148, 0.5), rgba(249, 228, 148, 0.5));
+	// linear-gradient(rgba(255, 255, 0, 0.356), rgba(255, 255, 255, 0.349));
+	// background-position-y: top; //var(--yellowTrans), var(--yellowTrans)
+	// background-size: 300px;
+	// position: relative;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+
+	// margin: auto;
+}
+.explore {
+	font-family: "Kaushan Script", cursive;
+	background-color: transparent;
+	font-size: 2rem;
+	border: 0.3rem solid black;
+	color: black;
+	border-radius: 0.25rem;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+.explore:hover {
+	background-color: black;
+	color: #ef7998;
+}
+.bigtitle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #ffffff;
+	padding: 60px;
+}
+.leftheader {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.rightimage {
+	// padding: 60px;
+	position: relative;
+	z-index: 0;
+}
+.rightimage::before {
+	content: "";
+	position: absolute;
+	top: -1.5rem;
+	left: -1.7rem;
+	// width: 100%;
+	// height: 100%;
+	width: 540px;
+	height: 400px;
+	outline: 0.5rem solid rgb(249, 228, 148);
+	z-index: -1;
+	transition: all 1s ease-in-out;
+}
+.rightimage:hover:before {
+	top: 0;
+	left: 0;
+}
+.loremipsum {
+	font-family: "Kaushan Script", cursive;
+	padding: 30px;
+	text-align: left;
+}
+.ourstore {
+	background-color: #eeeeee;
+	padding: 50px;
+}
+.ourstorebutton {
+	font-family: "Kaushan Script", cursive;
+	background-color: transparent;
+	font-size: 1rem;
+	border: 0.3rem solid black;
+	color: black;
+	border-radius: 0.25rem;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+.ourstorebutton:hover {
+	background-color: black;
+	color: #ef7998;
+}
+.cakebuttondivs {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 300px;
+}
+
+.cardcontainer {
+	margin: 50px;
+	padding: 50px 50px 20px 50px;
+	background-color: #eeeeee;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-column-gap: 5%;
+	grid-row-gap: 50px;
+}
+
+.cardcontainer:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.carditems {
+	display: flex;
+	justify-content: space-around;
+	font-family: "Kaushan Script", cursive;
+	font-size: 24px;
+}
+
+.card {
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	// flex-direction: column;
+	// margin: 30px;
+	background-color: #ffffff;
+	.card-img-container {
+		display: flex;
+		justify-content: center;
+		// height: 300px;
+		// width: 100%;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		img {
+			width: 100%;
+			transition: all 0.3s ease-in-out;
+		}
+		font-size: 1.5rem;
+		svg {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			background-color: yellow;
+			fill: black;
+			padding: 0.75rem;
+			border-top-left-radius: 1rem;
+			transition: transform 0.3s ease-in-out;
+			transform: translate(100%, 100%);
+		}
+		&:hover svg {
+			transform: translate(0, 0);
+		}
+		&:hover img {
+			transform: scale(1.2);
+		}
+	}
+}
+
+.uparrow {
+	position: fixed;
+	font-size: 24px;
+}
